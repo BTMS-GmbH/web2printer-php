@@ -50,24 +50,25 @@ For $web2printer = new Web2Printer("de"); the ini filename becomes config-de.ini
 For $web2printer = new Web2Printer("en"); the ini filename becomes config-en.ini
 
 ### Configuration parameters
-
-> ; active link
-> ; 0 - hyperlinks not active (clickable) in the resulting html file
-> ; 1 - hyperlinks active (clickable) in the resulting html file
-> activeLinks = 0
-> ; 0 disable footer
-> ; 1 enable  footer
-> ; 2 use custom footer
-> footer = 1
-> ; page url header:
-> pageUrlHeader = "<b>This page URLs</b>:<br>"
-> ; page url crossreference header:
-> pageXRefURLHeader = "<b>Links:</b>"
-> ; page images crossreference header:
-> pageXRefImages = "<b>Images:</b>"
-> ; custom footer text - if you not enjoy the standard footer
-> ; this page was generated with ....
-> customFooter = "";
+```
+; active link
+; 0 - hyperlinks not active (clickable) in the resulting html file
+; 1 - hyperlinks active (clickable) in the resulting html file
+activeLinks = 0
+; 0 disable footer
+; 1 enable  footer
+; 2 use custom footer
+footer = 1
+; page url header:
+pageUrlHeader = "<b>This page URLs</b>:<br>"
+; page url crossreference header:
+pageXRefURLHeader = "<b>Links:</b>"
+; page images crossreference header:
+pageXRefImages = "<b>Images:</b>"
+; custom footer text - if you not enjoy the standard footer
+; this page was generated with ....
+customFooter = "";
+```
 
 Reference
 ---------
