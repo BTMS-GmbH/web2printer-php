@@ -23,22 +23,23 @@ Put the relevant page content with in to two html comments:
 Parameters
 ----------
 Web2printer accepts get and post parameters. All parameters are optional and validated before they are processed.
-|parameter|value |meaning                                                               |constraint|
-|---------|-----:|---------------------------------------------------------------------:|----------|
+
+|parameter|value |meaning                                                               |constraint                            |
+|---------|-----:|---------------------------------------------------------------------:|--------------------------------------|
 |lnk      |      |                                                                      |length == 1, numeric, between  1 and 2|
-|         |     1|create hyperlink xref                                                 ||
-|         |     2|create hyperlink xref and remove get parameters                       ||
+|         |     1|create hyperlink xref                                                 |                                      |
+|         |     2|create hyperlink xref and remove get parameters                       |                                      |
 |img      |      |                                                                      |length == 1, numeric, between  1 and 4|
-|         |     1|supress images                                                        ||
-|         |     2|replace images with IMAGE                                             ||
-|         |     3|replace images with alt="" tag                                        ||
-|         |     4|replace images with alt="" tag and create a image xref                ||
+|         |     1|supress images                                                        |                                      |
+|         |     2|replace images with IMAGE                                             |                                      |
+|         |     3|replace images with alt="" tag                                        |                                      |
+|         |     4|replace images with alt="" tag and create a image xref                |                                      |
 |tgs      |      |                                                                      |length == 1, numeric, between  1 and 2|
-|         |     1|preserve metatags                                                     ||
-|style    |      |                                                                      |length =< 255, string|
-|         |path  |stylsheet used for printing                                           ||
-|page     |      |                                                                      |length =< 255, string|
-|         |path  |page to print (relative or absolute path, _without_ hostname and port)||
+|         |     1|preserve metatags                                                     |                                      |
+|style    |      |                                                                      |length =< 255, string                 |
+|         |path  |stylsheet used for printing                                           |                                      |
+|page     |      |                                                                      |length =< 255, string                 |
+|         |path  |page to print (relative or absolute path, _without_ hostname and port)|                                      |
 
 Configuration
 -------------
