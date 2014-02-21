@@ -7,6 +7,17 @@ Web2Printer is the first and most powerful printer-friendly OSS today.
 Prerequisites
 -------------
 PHP 5.3
+Reference
+---------
+Homepage: http://phpshaper.com
+
+E-Mail:   info (at) phpshaper.com
+
+GITHUB:  https://github.com/phpshaper/web2printer-php
+
+Examplepage : http://phpshaper.com/easyblog/2014/01/29/51-print-friendly-webpages-php.html
+Beispielseite: http://phpshaper.com/easyblog/2014/01/29/56-print-friendly-webpages-php-de.html
+
 Functions
 ---------
 Web2Printer works online, real-time. There is no need to define a second, "hidden" page. Just put a hyperlink in your document. Web2Printer generates a meaningful page footer, to preserves the origin and navigation information.
@@ -17,9 +28,9 @@ The footer contains:
 * a image cross reference
 * images replaced with the alt="" tag content
 Put the relevant page content with in to two html comments:
-    <!-- start main column -->
+    <!-- web2printer:start -->
     every thing between this comments is transformed in a printable manner
-    <!-- end main column -->
+    <!-- web2printer:end -->
 Parameters
 ----------
 Web2printer accepts get and post parameters. All parameters are optional and validated before they are processed.
@@ -69,10 +80,3 @@ pageXRefImages = "<b>Images:</b>"
 ; this page was generated with ....
 customFooter = "";
 ```
-
-Reference
----------
-Homepage: http://phpshaper.com
-E-Mail:   info (at) phpshaper.com
-GITHUB:  https://github.com/phpshaper/web2printer-php
-Example: http://phpshaper.com/printer-friendly/examples.html
